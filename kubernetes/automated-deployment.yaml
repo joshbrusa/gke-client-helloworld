@@ -54,7 +54,7 @@ metadata:
               "f:terminationGracePeriodSeconds": {}
       manager: GoogleCloudConsole
       operation: Update
-      time: "2023-01-29T02:08:36Z"
+      time: "2023-01-29T20:52:20Z"
     - apiVersion: apps/v1
       fieldsType: FieldsV1
       fieldsV1:
@@ -88,7 +88,7 @@ metadata:
       manager: kube-controller-manager
       operation: Update
       subresource: status
-      time: "2023-01-29T02:10:49Z"
+      time: "2023-01-29T20:55:11Z"
   name: nginx-1
   namespace: default
 spec:
@@ -107,7 +107,7 @@ spec:
         app: nginx-1
     spec:
       containers:
-        - image: gcr.io/test1-374823/github.com/joshbrusa/k8-flask-test-1
+        - image: gcr.io/test1-374823/github.com/joshbrusa/gke-client-helloworld
           imagePullPolicy: IfNotPresent
           name: gke-client-helloworld-1
           resources:
@@ -155,7 +155,7 @@ metadata:
             "f:name": {}
       manager: GoogleCloudConsole
       operation: Update
-      time: "2023-01-29T02:08:37Z"
+      time: "2023-01-29T20:52:22Z"
     - apiVersion: autoscaling/v2
       fieldsType: FieldsV1
       fieldsV1:
@@ -190,8 +190,8 @@ metadata:
       manager: vpa-recommender
       operation: Update
       subresource: status
-      time: "2023-01-29T02:13:56Z"
-  name: nginx-1-hpa-jllx
+      time: "2023-01-29T20:57:39Z"
+  name: nginx-1-hpa-dwsn
   namespace: default
 spec:
   maxReplicas: 5
@@ -241,7 +241,7 @@ metadata:
           "f:type": {}
       manager: GoogleCloudConsole
       operation: Update
-      time: "2023-01-29T02:09:38Z"
+      time: "2023-01-29T20:53:22Z"
     - apiVersion: v1
       fieldsType: FieldsV1
       fieldsV1:
@@ -255,21 +255,21 @@ metadata:
       manager: kube-controller-manager
       operation: Update
       subresource: status
-      time: "2023-01-29T02:10:23Z"
+      time: "2023-01-29T20:55:24Z"
   name: nginx-1-service
   namespace: default
 spec:
   allocateLoadBalancerNodePorts: true
-  clusterIP: 10.67.128.116
+  clusterIP: 10.67.131.16
   clusterIPs:
-    - 10.67.128.116
+    - 10.67.131.16
   externalTrafficPolicy: Cluster
   internalTrafficPolicy: Cluster
   ipFamilies:
     - IPv4
   ipFamilyPolicy: SingleStack
   ports:
-    - nodePort: 31847
+    - nodePort: 30724
       port: 80
       protocol: TCP
       targetPort: 80
